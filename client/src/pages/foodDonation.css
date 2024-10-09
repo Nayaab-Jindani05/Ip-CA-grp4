@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    /* background: linear-gradient(to bottom right, white , #ffb3b3); Bold gradient background */
+    background-color: rgb(249, 236, 236);
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox to center items */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Container Styles */
+.container {
+    position: relative;
+    max-width: 600px; /* Adjusted max-width for a more spacious design */
+    padding: 40px; /* Generous padding for comfort */
+    background-color: #fff; /* Bright background for the container */
+    border-radius: 12px; /* Rounded corners for a friendly feel */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Strong shadow for depth */
+    text-align: center;
+    z-index: 2;
+}
+
+/* Header Styles */
+h1 {
+    color: #c80000; /* Bold red for the header */
+    font-size: 2.5em; /* Larger font size for emphasis */
+    margin-bottom: 20px; /* Space below the header */
+    font-weight: bold; /* Bold weight for impact */
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.input {
+    padding: 15px; /* Increased padding for comfort */
+    margin: 12px 0; /* Spacing between inputs */
+    border: 2px solid #c80000; /* Strong red border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+.input:focus {
+    border-color: #ff4d4d; /* Lighter red border on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button Styles */
+.button {
+    padding: 15px; /* Increased padding for comfort */
+    background-color: #c80000; /* Bold red background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.2em; /* Larger font size for buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.button:hover {
+    background-color: #ff4d4d; /* Lighter red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Checkbox Group Styles */
+.checkboxGroup {
+    display: flex;
+    flex-direction: column; /* Stack checkbox labels vertically */
+    align-items: flex-start; /* Align labels to the left */
+}
+
+label {
+    margin: 8px 0; /* Margin for spacing */
+    font-size: 1.1em; /* Slightly larger font size for labels */
+    color: #c80000; /* Red color for labels */
+}
+
+/* Background Shapes */
+.shape {
+    position: absolute;
+    border-radius: 50%; /* Make it circular */
+    opacity: 0.1; /* More transparent for a subtle effect */
+    pointer-events: none; /* Prevent interaction */
+}
+
+.shape1 {
+    background-color: white; /* Light red shape */
+    width: 350px; /* Width of the shape */
+    height: 350px; /* Height of the shape */
+    top: -50px; /* Positioning */
+    left: -50px; /* Positioning */
+}
+
+.shape2 {
+    background-color: white; /* Light pink shape */
+    width: 450px; /* Width of the shape */
+    height: 450px; /* Height of the shape */
+    bottom: -50px; /* Positioning */
+    right: -50px; /* Positioning */
+}
+
+/* Additional Readability Styles */
+::placeholder {
+    color: #aaa; /* Light gray for placeholders */
+    opacity: 1; /* Ensuring full opacity for better visibility */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox/radio and label */
+}
+
+input[type="file"] {
+    border: 2px solid #c80000; /* Strong red border for file input */
+    padding: 10px; /* Padding for better interaction */
+    border-radius: 8px; /* Rounded corners */
+}

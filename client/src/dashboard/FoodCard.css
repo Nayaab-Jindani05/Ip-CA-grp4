@@ -1,0 +1,65 @@
+.food-card {
+  background-color: #ffffff; /* Solid white background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 20px; /* Increased padding for more space */
+  margin: 15px; /* Added margin for spacing between cards */
+  width: 320px; /* Fixed width for consistency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* For positioning pseudo-elements */
+}
+
+.food-card:hover {
+  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Slightly softer shadow on hover */
+}
+
+.food-card h2 {
+  font-size: 1.5rem; /* Adjusted font size for the title */
+  margin-bottom: 10px; /* Spacing below the title */
+  color: #d35400; /* A soft, warm orange-red for the title */
+  font-weight: 600; /* Semi-bold for better emphasis */
+  border-bottom: 2px solid #e74c3c; /* Subtle red border */
+  padding-bottom: 5px; /* Padding below the title */
+}
+
+.food-card p {
+  font-size: 0.95rem; /* Slightly smaller font size for text */
+  margin: 8px 0; /* Margin for spacing between paragraphs */
+  color: #7f8c8d; /* Neutral gray color for text */
+}
+
+.food-card p:last-of-type {
+  margin-bottom: 0; /* No margin for the last paragraph */
+}
+
+.food-card p span {
+  font-weight: bold; /* Bold for emphasized text */
+  color: #e74c3c; /* Red for emphasis */
+}
+
+.food-card p::before {
+  content: '• '; /* Bullet point before each detail */
+  color: #e74c3c; /* Red bullet points */
+}
+
+.food-card p:hover::before {
+  color: #c0392b; /* Darker red on hover */
+}
+
+/* Subtle gradient border effect */
+.food-card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 14px; /* Slightly larger than card */
+  background: linear-gradient(135deg, #e74c3c, #ecf0f1); /* Soft red to light gray */
+  z-index: -1; /* Place behind the card */
+}
+
+.food-card:hover::before {
+  filter: brightness(1.1); /* Brighten the gradient on hover */
+}
