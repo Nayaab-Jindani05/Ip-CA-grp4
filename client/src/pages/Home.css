@@ -1,0 +1,67 @@
+/* Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the content takes at least the full height of the viewport */
+  }
+  
+  .header {
+    background-color: #333; /* Dark background for the header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0; /* Makes the header stick to the top */
+    z-index: 1000; /* Ensures the header stays above other elements */
+  }
+  
+  .logo h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .logo span {
+    color: red; /* Highlight 'Foundation' in a different color */
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .nav-buttons button {
+    background-color: #ff9999;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #ff6666; /* Darker color on hover */
+  }
+  
+  .footer {
+    background-color: #3a3939;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  /* Add any necessary responsive design for mobile screens */
+  @media (max-width: 768px) {
+    .nav-buttons {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .nav-buttons button {
+      margin: 5px 0;
+    }
+  }
+  

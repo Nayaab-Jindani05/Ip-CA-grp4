@@ -5,7 +5,8 @@ import HelpCard from "../components/HelpCard/HelpCard";
 import Vision from "../components/Vision/Vision";
 import Partner from "../components/Partner/Partner";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header"; // Import the Header component
+import Header from "../components/Header"; // Ensure the path is correct
+import './Home.css';
 
 const Home = () => {
   const [activeComponent, setActiveComponent] = useState("ImgDisplay");

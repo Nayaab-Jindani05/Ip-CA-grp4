@@ -1,202 +1,60 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-
-* {
-
-  font-family: Roboto, sans-serif;
-
+/* Home.css */
+.header {
+  background-color: white; /* White background */
+  color: #333; /* Dark text for contrast */
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the entire header content */
+  align-items: center; /* Vertically center the content */
 }
 
-body {
-  margin: 0px;
-  font-size: 1.5rem;
+.logo {
+  margin-right: auto; /* Pushes the logo to the left */
 }
 
-.login_container {
-
-  display: flex;
-  justify-content: space-around;
+.logo h2 {
+  font-size: 28px; 
+  margin: 0; /* Remove default margin */
 }
 
-.login_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100vh;
-  /* background-color: #3C3C3C; */
+.logo span {
+  color: red; /* Red for 'Foundation' */
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  /* width: 400px; */
-  justify-content: space-around;
-
+.nav-buttons {
+  display: flex; /* Use flexbox for button layout */
+  justify-content: center; /* Center the buttons */
+  align-items: center; /* Vertically center buttons with the title */
 }
 
-.login_main-img {
-  background-image: url(../assets/images/login.jpg);
-  background-size: cover;
-  width: 50%;
-  flex:1;
-  
+.nav-buttons button {
+  background-color: #fa3737;
+  border: none; 
+  padding: 10px 20px; 
+  margin-left: 10px; /* Space between buttons */
+  cursor: pointer; 
+  color: white; 
+  font-size: 16px; 
+  transition: background-color 0.3s ease; 
 }
 
-.login__heading {
-  color: #31081F;
-  margin-bottom: 20px;
+.nav-buttons button:hover {
+  background-color: rgb(249, 215, 215); /* Darker hover color */
 }
 
-.wrapper p {
-  font-size: 1.5rem;
-  color: #31081F;
-  margin-bottom: 40px;
-}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons on small screens */
+    margin-top: 10px; 
+  }
 
-.pass-icon {
-  display: flex;
-  position: relative;
-  /* width: 250px; */
-}
-
-#email,
-#password {
-  height: 70px;
-  width: auto;
-  /* border-radius: 15px; */
-  padding-left: 15px;
-  /* border: 1px solid #919191; */
-  margin-bottom: 25px;
-  position: relative;
-
-}
-
-input {
-  outline: 0;
-  font-size: 1.2rem;
-  border-width: 0 0 5px;
-  border-color: #31081F
-}
-
-input:focus {
-  border-color: #A5D0A8;
-
-
-}
-
-/* .pass-icon img {
-  width: 25px;
-  position: absolute;
-  align-self: center;
-  top: 27%;
-  right: 0;
-  margin-right: 10px;
-  filter: opacity(0.3);
-} */
-
-a {
-  text-decoration: none;
-  color: #31081F;
-  font-size: 1rem;
-  text-align: right;
-  margin-right: 15px;
-  padding-top: 10px;
-}
-
-#password {
-  margin-bottom: 10px;
-}
-
-#login-btn {
-  width: 100%;
-  margin: 20px 0;
-  height: 70px;
-  border-radius: 15px;
-  border: none;
-  background-color: #31081F;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: 0.5s;
-  /* padding-bottom: ; */
-
-}
-
-span {
-  text-align: center;
-  position: relative;
-}
-
-.or {
-  /* width: 250px; */
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  color: #31081F;
-  margin-bottom: 20px;
-  font-size: 1rem;
-  padding: 10px 0;
-}
-
-.or hr {
-  width: 40%;
-  height: 2px;
-  background-color: #31081F;
-  border: none;
-  align-self: center;
-}
-
-.google-btn {
-  height: 70px;
-  border: 1px solid #31081F;
-  border-radius: 15px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  margin-bottom: 20px;
-  color: #31081F;
-  transition: 0.5s;
-
-
-}
-
-.google-btn svg {
-  width: 20px;
-  margin-right: 10px;
-}
-
-.register {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  padding-top: 20px;
-
-
-}
-
-.register-btn {
-  height: 30px;
-  padding: 5px 15px;
-  display: flex;
-  align-items: center;
-  font-size: 0.75rem;
-  font-weight: bold;
-  background-color: white;
-  border: 1px solid #31081F;
-  border-radius: 10px;
-  color: #31081F;
-  transition: 0.5s;
-}
-
-.register p {
-  margin: 0 11px 0;
-  font-size: 1rem;
-}
-
-button:hover,
-#login-btn:hover {
-  transform: scale(1.1);
+  .nav-buttons button {
+    margin: 5px 0; /* Space between buttons */
+  }
 }
